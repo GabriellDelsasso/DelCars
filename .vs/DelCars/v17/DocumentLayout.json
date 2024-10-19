@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gabri\\source\\repos\\DelCars\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\delcars.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\delcars.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 208,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Program.cs",
+              "RelativeDocumentMoniker": "DelCars\\Program.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Program.cs",
+              "RelativeToolTip": "DelCars\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T19:33:35.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DelCars.http",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\DelCars.http",
+              "RelativeDocumentMoniker": "DelCars\\DelCars.http",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\DelCars.http",
+              "RelativeToolTip": "DelCars\\DelCars.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-19T19:33:25.929Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
