@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelCars", "DelCars\DelCars.csproj", "{1F7CD9A3-D085-4734-BD81-2630FB14F933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelCars", "DelCars\DelCars.csproj", "{1F7CD9A3-D085-4734-BD81-2630FB14F933}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Client", "1 - Client", "{ACC9293C-18A8-4E28-A963-D25983E5DD20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{123801AB-B1B5-4B1B-BC38-43910269E759}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{F4C2569B-C01E-4856-BEDB-6233A0DBD848}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{4D2B52FF-4BDC-463D-BF95-18AD9494F97B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{6F7BF632-EBB3-4B65-9A38-E6975F64ABF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{8FCF41FE-DD78-409A-B8E3-09752BBA74C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +30,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F7CD9A3-D085-4734-BD81-2630FB14F933} = {ACC9293C-18A8-4E28-A963-D25983E5DD20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56788725-60E3-4831-BBFD-5CCBE3E74171}
