@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\controllers\\rentcarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\controllers\\rentcarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +18,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RentCarController.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Controllers\\RentCarController.cs",
+              "RelativeDocumentMoniker": "DelCars\\Controllers\\RentCarController.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Controllers\\RentCarController.cs",
+              "RelativeToolTip": "DelCars\\Controllers\\RentCarController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T21:09:38.605Z"
             },
             {
               "$type": "Document",
@@ -36,35 +44,9 @@
               "RelativeDocumentMoniker": "DelCars\\Controllers\\CarsController.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Controllers\\CarsController.cs",
               "RelativeToolTip": "DelCars\\Controllers\\CarsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T20:56:15.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "DelCars\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Properties\\launchSettings.json",
-              "RelativeToolTip": "DelCars\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-19T20:39:57.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Program.cs",
-              "RelativeDocumentMoniker": "DelCars\\Program.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Program.cs",
-              "RelativeToolTip": "DelCars\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T20:39:54.298Z",
               "EditorCaption": ""
             }
           ]
