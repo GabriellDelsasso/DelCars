@@ -17,13 +17,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{8FCF41FE-DD78-409A-B8E3-09752BBA74C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelCars.Application", "DelCars.Application\DelCars.Application.csproj", "{9FB247D2-BB2D-4B63-A51E-C0D022749263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelCars.Application", "DelCars.Application\DelCars.Application.csproj", "{9FB247D2-BB2D-4B63-A51E-C0D022749263}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelCars.Domain", "DelCars.Domain\DelCars.Domain.csproj", "{FA92F8DB-F65B-4320-9284-B5D6F5E9917A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelCars.Domain", "DelCars.Domain\DelCars.Domain.csproj", "{FA92F8DB-F65B-4320-9284-B5D6F5E9917A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelCars.Domain.Models", "DelCars.Domain.Models\DelCars.Domain.Models.csproj", "{068767BA-1D91-4213-BFE2-CB7EF594837E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelCars.Domain.Models", "DelCars.Domain.Models\DelCars.Domain.Models.csproj", "{068767BA-1D91-4213-BFE2-CB7EF594837E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delcars.Infrastructure", "Delcars.Infrastructure\Delcars.Infrastructure.csproj", "{36D989C5-6685-401E-A3D8-1FE0C42B49A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delcars.Infra.Data.Postgre", "Delcars.Infrastructure\Delcars.Infra.Data.Postgre.csproj", "{36D989C5-6685-401E-A3D8-1FE0C42B49A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{AEA86833-DCDC-4EA3-919E-DD7F9C338A46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{3B45F2A7-7410-41A3-8D27-39CF4BD88C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelCars.Infra.CrossCutting.IoC", "DelCars.Infra.CrossCutting.IoC\DelCars.Infra.CrossCutting.IoC.csproj", "{6C87E35D-3BE0-4CF2-A969-892163AB6F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelCars.Infra.CrossCutting.AutoMapper", "DelCars.Infra.CrossCutting.AutoMapper\DelCars.Infra.CrossCutting.AutoMapper.csproj", "{AA849F9D-0F39-4692-A324-13DFDED82EF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +59,14 @@ Global
 		{36D989C5-6685-401E-A3D8-1FE0C42B49A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36D989C5-6685-401E-A3D8-1FE0C42B49A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36D989C5-6685-401E-A3D8-1FE0C42B49A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C87E35D-3BE0-4CF2-A969-892163AB6F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C87E35D-3BE0-4CF2-A969-892163AB6F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C87E35D-3BE0-4CF2-A969-892163AB6F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C87E35D-3BE0-4CF2-A969-892163AB6F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA849F9D-0F39-4692-A324-13DFDED82EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA849F9D-0F39-4692-A324-13DFDED82EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA849F9D-0F39-4692-A324-13DFDED82EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA849F9D-0F39-4692-A324-13DFDED82EF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,7 +76,11 @@ Global
 		{9FB247D2-BB2D-4B63-A51E-C0D022749263} = {F4C2569B-C01E-4856-BEDB-6233A0DBD848}
 		{FA92F8DB-F65B-4320-9284-B5D6F5E9917A} = {4D2B52FF-4BDC-463D-BF95-18AD9494F97B}
 		{068767BA-1D91-4213-BFE2-CB7EF594837E} = {4D2B52FF-4BDC-463D-BF95-18AD9494F97B}
-		{36D989C5-6685-401E-A3D8-1FE0C42B49A8} = {6F7BF632-EBB3-4B65-9A38-E6975F64ABF3}
+		{36D989C5-6685-401E-A3D8-1FE0C42B49A8} = {AEA86833-DCDC-4EA3-919E-DD7F9C338A46}
+		{AEA86833-DCDC-4EA3-919E-DD7F9C338A46} = {6F7BF632-EBB3-4B65-9A38-E6975F64ABF3}
+		{3B45F2A7-7410-41A3-8D27-39CF4BD88C68} = {6F7BF632-EBB3-4B65-9A38-E6975F64ABF3}
+		{6C87E35D-3BE0-4CF2-A969-892163AB6F97} = {3B45F2A7-7410-41A3-8D27-39CF4BD88C68}
+		{AA849F9D-0F39-4692-A324-13DFDED82EF6} = {3B45F2A7-7410-41A3-8D27-39CF4BD88C68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56788725-60E3-4831-BBFD-5CCBE3E74171}

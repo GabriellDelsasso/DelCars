@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DelCars")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c4563778ed9061078102aa243ddb4826e49145e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d80f41159f599f8d8b4711ec7022242c223b2dfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("DelCars")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DelCars")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

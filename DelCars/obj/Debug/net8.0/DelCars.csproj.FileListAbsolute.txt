@@ -31,3 +31,14 @@ C:\Users\gabri\source\repos\DelCars\DelCars\obj\Debug\net8.0\refint\DelCars.dll
 C:\Users\gabri\source\repos\DelCars\DelCars\obj\Debug\net8.0\DelCars.pdb
 C:\Users\gabri\source\repos\DelCars\DelCars\obj\Debug\net8.0\DelCars.genruntimeconfig.cache
 C:\Users\gabri\source\repos\DelCars\DelCars\obj\Debug\net8.0\ref\DelCars.dll
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\Dapper.dll
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\Npgsql.dll
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\DelCars.Application.dll
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\DelCars.Domain.dll
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\DelCars.Domain.Models.dll
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\Delcars.Infrastructure.dll
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\DelCars.Application.pdb
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\DelCars.Domain.pdb
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\DelCars.Domain.Models.pdb
+C:\Users\gabri\source\repos\DelCars\DelCars\bin\Debug\net8.0\Delcars.Infrastructure.pdb

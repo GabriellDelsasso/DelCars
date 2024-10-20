@@ -1,11 +1,6 @@
 ﻿using Npgsql;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Delcars.Infrastructure.Context
+namespace Delcars.Infra.Data.Postgre
 {
     public class DbConnection : IDisposable
     {

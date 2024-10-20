@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DelCars.Application\DelCars.Application.csproj" />
+    <ProjectReference Include="..\DelCars.Infra.CrossCutting.IoC\DelCars.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
 </Project>

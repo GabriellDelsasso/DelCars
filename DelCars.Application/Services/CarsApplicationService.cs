@@ -2,11 +2,6 @@
 using DelCars.Application.ViewModels;
 using DelCars.Domain.Services;
 using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DelCars.Domain.Models.Car;
 
 namespace DelCars.Application.Services
@@ -16,9 +11,10 @@ namespace DelCars.Application.Services
         private readonly CarsDomainService _carsDomainService;
         private readonly IMapper _mapper;
 
-        public CarsApplicationService(CarsDomainService carsDomainService)
+        public CarsApplicationService(CarsDomainService carsDomainService, IMapper mapper)
         {
             _carsDomainService = carsDomainService;
+            _mapper = mapper;
         }
 
         public async Task<(bool, string)> RegisterCar(CarViewModel carViewModel)
