@@ -28,5 +28,12 @@ namespace DelCars.Domain.Services
 
             return carExists;
         }
+
+        public async Task<IList<Car>> GetAllCars()
+        {
+            var allCars = _carRepository.GetAll();
+
+            return allCars;
+        }
     }
 }

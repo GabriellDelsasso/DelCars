@@ -25,7 +25,7 @@ namespace DelCars.Application.Services
                 {
                     var carExists = await _carsDomainService.VerifyCarExists(carViewModel.Plate);
 
-                    if (carExists)
+                    if (!carExists)
                     {
                         var result = await _carsDomainService.Add(_mapper.Map<Car>(carViewModel));
 
@@ -40,6 +40,13 @@ namespace DelCars.Application.Services
             }
 
             return (false, "Falha ao cadastrar o carro, falta informações");
+        }
+
+        public async Task<IList<Car>> GetAllCars()
+        {
+            var allCars = await _carsDomainService.GetAllCars();
+
+            return allCars;
         }
     }
 }

@@ -51,5 +51,16 @@ namespace Delcars.Infra.Data.Postgre.Repositories
                 return false;
             }
         }
+
+        public IList<Car> GetAll()
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
+            optionsBuilder.UseNpgsql(_connection.ConnectionString);
+
+            using (var context = new CarContext(optionsBuilder.Options))
+            {
+                return context.car.ToList();
+            }
+        }
     }
 }

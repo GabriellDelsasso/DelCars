@@ -1,5 +1,6 @@
 ﻿using DelCars.Application.Interfaces;
 using DelCars.Application.ViewModels;
+using DelCars.Domain.Models.Car;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,10 +33,10 @@ namespace DelCars.Controllers
         /// <summary>
         /// Endpoint responsible for searching all cars
         /// </summary>
-        [HttpGet("GetCars")]
-        public async void GetCars()
+        [HttpGet("GetAllCars")]
+        public async Task<ActionResult> GetAllCars()
         {
-
+            return Ok(await _carsApplicationService.GetAllCars());
         }
 
         /// <summary>
