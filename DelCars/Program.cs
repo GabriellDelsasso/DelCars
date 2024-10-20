@@ -1,9 +1,6 @@
-using AutoMapper;
-using Delcars.Infrastructure.Repositories;
 using DelCars.Application.Interfaces;
 using DelCars.Application.Services;
 using DelCars.Infra.CrossCutting.IoC;
-using DelCars.Domain.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +19,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ICarsApplicationService, CarsApplicationService>();
+builder.Services.ConfigurePostgre(builder.Configuration);
 builder.Services.ConfigureDomain();
 
 var app = builder.Build();

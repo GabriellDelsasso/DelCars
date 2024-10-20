@@ -328,9 +328,17 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -403,9 +411,13 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
-            "Npgsql": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             }
           },
           "imports": [

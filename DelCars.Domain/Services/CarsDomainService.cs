@@ -1,4 +1,4 @@
-﻿using Delcars.Infrastructure.Repositories;
+﻿using Delcars.Infra.Data.Postgre.Repositories;
 using DelCars.Domain.Models.Car;
 
 namespace DelCars.Domain.Services
