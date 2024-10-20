@@ -12,11 +12,21 @@ namespace DelCars.Domain.Services
             _carRepository = carRepository;
         }
 
-        public async Task<bool> Add(Car carToAdd)
+        public async Task<(bool, string)> Add(Car carToAdd)
         {
             var result = _carRepository.Add(carToAdd);
 
-            return result;
+            if(result)
+                return (result, "Carro cadastrado com sucesso!");
+
+            return (result, "Falha ao cadastrar o carro!");
+        }
+
+        public async Task<bool> VerifyCarExists(string plate)
+        {
+            var carExists = _carRepository.ExistsByPlate(plate);
+
+            return carExists;
         }
     }
 }

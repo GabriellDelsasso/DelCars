@@ -1,11 +1,12 @@
 ﻿using DelCars.Application.Interfaces;
 using DelCars.Application.ViewModels;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DelCars.Controllers
 {
     [Route("Cars")]
-    public class CarsController
+    public class CarsController : ControllerBase
     {
         private readonly ICarsApplicationService _carsApplicationService;
 
@@ -18,11 +19,14 @@ namespace DelCars.Controllers
         /// Endpoint responsible for registering new cars
         /// </summary>
         [HttpPost("ResgisterCar")]
-        public async Task<(bool, string)> RegisterCar([FromBody] CarViewModel carViewModel)
+        public async Task<ActionResult> RegisterCar([FromBody] CarViewModel carViewModel)
         {
             var result = await _carsApplicationService.RegisterCar(carViewModel);
 
-            return result;
+            if (result.Item1)
+                return Ok($"{result.Item2}");
+
+            return BadRequest($"{result.Item2}");
         }
 
         /// <summary>

@@ -33,5 +33,23 @@ namespace Delcars.Infra.Data.Postgre.Repositories
                 return false;
             }
         }
+
+        public bool ExistsByPlate(string plate)
+        {
+            try
+            {
+                var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
+                optionsBuilder.UseNpgsql(_connection.ConnectionString);
+
+                using (var context = new CarContext(optionsBuilder.Options))
+                {
+                    return context.car.Any(c => c.Plate == plate);
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }

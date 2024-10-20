@@ -23,9 +23,15 @@ namespace DelCars.Application.Services
             {
                 try
                 {
-                    var result = await _carsDomainService.Add(_mapper.Map<Car>(carViewModel));
+                    var carExists = await _carsDomainService.VerifyCarExists(carViewModel.Plate);
 
-                    return (true, "Carro cadastrado com sucesso!");
+                    if (carExists)
+                    {
+                        var result = await _carsDomainService.Add(_mapper.Map<Car>(carViewModel));
+
+                        return result;
+                    }
+                    return (false, "A placa do carro já está cadastrada no sistema!");
                 }
                 catch (Exception ex)
                 {
