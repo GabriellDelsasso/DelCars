@@ -1,23 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DelCars.Application.Interfaces;
+using DelCars.Application.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DelCars.Controllers
 {
     [Route("Cars")]
     public class CarsController
     {
+        private readonly ICarsApplicationService _carsApplicationService;
 
-        public CarsController()
+        public CarsController(ICarsApplicationService carsApplicationService)
         {
-
+            _carsApplicationService = carsApplicationService;
         }
 
         /// <summary>
         /// Endpoint responsible for registering new cars
         /// </summary>
         [HttpPost("ResgisterCar")]
-        public async void RegisterCar()
+        public async Task<(bool, string)> RegisterCar([FromBody] CarViewModel carViewModel)
         {
+            var result = await _carsApplicationService.RegisterCar(carViewModel);
 
+            return result;
         }
 
         /// <summary>
