@@ -23,6 +23,12 @@ namespace DelCars.Application.Services
             {
                 try
                 {
+                    var validator = new CarViewModelValidator();
+                    var validatorResult = validator.Validate(carViewModel);
+
+                    if (!validatorResult.IsValid)
+                        return (false, $"{validatorResult.Errors.DefaultIfEmpty()}");
+
                     var carExists = await _carsDomainService.VerifyCarExists(carViewModel.Plate);
 
                     if (!carExists)
@@ -67,6 +73,12 @@ namespace DelCars.Application.Services
         {
             if (carViewModel != null)
             {
+                var validator = new CarViewModelValidator();
+                var validatorResult = validator.Validate(carViewModel);
+
+                if (!validatorResult.IsValid)
+                    return (false);
+
                 var car = _mapper.Map<Car>(carViewModel);
                 car.Id = id;
 
