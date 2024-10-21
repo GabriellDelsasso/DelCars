@@ -86,5 +86,25 @@ namespace Delcars.Infra.Data.Postgre.Repositories
                 return true;
             }
         }
+
+        public bool Delete(Guid id)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
+            optionsBuilder.UseNpgsql(_connection.ConnectionString);
+
+            using (var context = new CarContext(optionsBuilder.Options))
+            {
+                var carDelete = context.car.Find(id);
+
+                if(carDelete == null)
+                    return false;
+
+                context.car.Remove(carDelete);
+
+                context.SaveChanges();
+
+                return true;
+            }
+        }
     }
 }

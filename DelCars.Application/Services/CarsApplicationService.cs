@@ -63,5 +63,12 @@ namespace DelCars.Application.Services
 
             return false;
         }
+
+        public async Task<bool> DeleteCar(Guid id)
+        {
+            var deleteCar = await _carsDomainService.DeleteCar(id);
+
+            return deleteCar;
+        }
     }
 }

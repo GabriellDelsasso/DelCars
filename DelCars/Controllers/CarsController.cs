@@ -57,9 +57,14 @@ namespace DelCars.Controllers
         /// Endpoint responsible for deleting car
         /// </summary>
         [HttpDelete("DeleteCar")]
-        public async void DeleteCar()
+        public async Task<ActionResult> DeleteCar(Guid id)
         {
+            var result = await _carsApplicationService.DeleteCar(id);
 
+            if (result)
+                return Ok();
+
+            return BadRequest("Falha ao deletar carro!");
         }
     }
 }

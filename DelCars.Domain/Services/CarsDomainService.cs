@@ -42,5 +42,12 @@ namespace DelCars.Domain.Services
 
             return updateCar;
         }
+
+        public async Task<bool> DeleteCar(Guid id)
+        {
+            var updateCar = _carRepository.Delete(id);
+
+            return updateCar;
+        }
     }
 }
