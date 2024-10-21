@@ -43,6 +43,13 @@ namespace DelCars.Domain.Services
             return carsRented;
         }
 
+        public async Task<IList<Car>> GetAvaliableCars()
+        {
+            var carsAvaliable = _carRepository.GetAvaliableCars();
+
+            return carsAvaliable;
+        }
+
         public async Task<bool> UpdateCarInfo(Car carToUpdate)
         {
             var updateCar = _carRepository.Update(carToUpdate);

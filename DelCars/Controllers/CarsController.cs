@@ -37,10 +37,22 @@ namespace DelCars.Controllers
             return Ok(await _carsApplicationService.GetAllCars());
         }
 
+        /// <summary>
+        /// Endpoint responsible for searching for rental cars
+        /// </summary>
         [HttpGet("GetRentedCars")]
         public async Task<ActionResult> GetRentedCars()
         {
             return Ok(await _carsApplicationService.GetRentedCars());
+        }
+
+        /// <summary>
+        /// Endpoint responsible for searching for available cars
+        /// </summary>
+        [HttpGet("GetAvailableCars")]
+        public async Task<ActionResult> GetAvailableCars()
+        {
+            return Ok(await _carsApplicationService.GetAvaliableCars());
         }
 
         /// <summary>

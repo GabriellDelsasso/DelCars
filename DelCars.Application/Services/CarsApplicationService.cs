@@ -56,6 +56,13 @@ namespace DelCars.Application.Services
             return carsRented;
         }
 
+        public async Task<IList<Car>> GetAvaliableCars()
+        {
+            var carsAvaliable = await _carsDomainService.GetAvaliableCars();
+
+            return carsAvaliable;
+        }
+
         public async Task<bool> UpdateCarInfo(Guid id, CarViewModel carViewModel)
         {
             if (carViewModel != null)

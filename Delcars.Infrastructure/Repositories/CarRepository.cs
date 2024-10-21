@@ -74,6 +74,17 @@ namespace Delcars.Infra.Data.Postgre.Repositories
             }
         }
 
+        public IList<Car> GetAvaliableCars()
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
+            optionsBuilder.UseNpgsql(_connection.ConnectionString);
+
+            using (var context = new CarContext(optionsBuilder.Options))
+            {
+                return context.car.Where(c => c.Rented == false).ToList();
+            }
+        }
+
         public bool Update(Car car)
         {
             var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
