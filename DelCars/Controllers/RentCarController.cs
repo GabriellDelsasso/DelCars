@@ -32,7 +32,7 @@ namespace DelCars.Controllers
         {
             var returnCar = await _rentCarApplicationService.ReturnCar(id);
 
-            return Ok(returnCar);
+            return Ok(returnCar.Item2);
         }
     }
 }

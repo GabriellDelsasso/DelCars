@@ -34,24 +34,26 @@ namespace DelCars.Application.Services
             throw new Exception("O carro não está disponível!");
         }
 
-        public async Task<(Car, string)> ReturnCar(Guid id)
+        public async Task<(bool, string)> ReturnCar(Guid id)
         {
             var car = await _rentCarDomainService.GetOne(id);
 
             if (car.Rented && car != null)
             {
+                var oldDate = car.ReturnDate;
+
                 var returnCar = await _rentCarDomainService.ReturnCar(car);
 
-                if (returnCar && car.ReturnDate <= DateTime.Now)
+                if (returnCar && oldDate <= DateTime.Now)
                 {
-                    return (car, "Carro devolvido com sucesso!");
+                    return (returnCar, "Carro devolvido com sucesso!");
                 }
-                else if(returnCar && car.ReturnDate > DateTime.Now)
+                else if(returnCar && oldDate > DateTime.Now)
                 {
-                    return (car, "Carro devolvido com atraso, será cobrada uma taxa!");
+                    return (returnCar, "Carro devolvido com atraso, será cobrada uma taxa!");
                 }
 
-                return (car, "Falha ao devolver carro!");
+                return (false, "Falha ao devolver carro!");
             }
             throw new Exception("Não foi possível realizar a devolução do carro!");
         }
