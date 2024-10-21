@@ -19,6 +19,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ICarsApplicationService, CarsApplicationService>();
+builder.Services.AddScoped<IRentCarApplicationService, RentCarApplicationService>();
 builder.Services.ConfigurePostgre(builder.Configuration);
 builder.Services.ConfigureDomain();
 

@@ -1,23 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DelCars.Application.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DelCars.Controllers
 {
     [Route("RentCar")]
-    public class RentCarController
+    public class RentCarController : ControllerBase
     {
-        
-        public RentCarController() 
-        {
+        private readonly IRentCarApplicationService _rentCarApplicationService;
 
+        public RentCarController(IRentCarApplicationService rentCarApplicationService) 
+        {
+            _rentCarApplicationService = rentCarApplicationService;
         }
 
         /// <summary>
         /// Endpoint responsible for renting cars
         /// </summary>
         [HttpPost("Rent")]
-        public async void Rent()
+        public async Task<ActionResult> Rent(Guid id, DateTime returnDate)
         {
 
+            var car = await _rentCarApplicationService.RentCar(id, returnDate);
+
+            return Ok(car);
         }
 
         /// <summary>

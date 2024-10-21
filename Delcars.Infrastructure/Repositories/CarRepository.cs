@@ -52,6 +52,17 @@ namespace Delcars.Infra.Data.Postgre.Repositories
             }
         }
 
+        public Car GetOne(Guid id)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
+            optionsBuilder.UseNpgsql(_connection.ConnectionString);
+
+            using (var context = new CarContext(optionsBuilder.Options))
+            {
+                return context.car.Find(id);
+            }
+        }
+
         public IList<Car> GetAll()
         {
             var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
@@ -122,6 +133,27 @@ namespace Delcars.Infra.Data.Postgre.Repositories
                     return false;
 
                 context.car.Remove(carDelete);
+
+                context.SaveChanges();
+
+                return true;
+            }
+        }
+
+        public bool RentCar(Car car)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
+            optionsBuilder.UseNpgsql(_connection.ConnectionString);
+
+            using (var context = new CarContext(optionsBuilder.Options))
+            {
+                var carUpdate = context.car.Find(car.Id);
+
+                if (carUpdate == null)
+                    return false;
+
+                carUpdate.Rented = car.Rented;
+                carUpdate.ReturnDate = car.ReturnDate.ToUniversalTime();
 
                 context.SaveChanges();
 

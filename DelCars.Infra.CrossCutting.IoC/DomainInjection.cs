@@ -21,6 +21,7 @@ namespace DelCars.Infra.CrossCutting.IoC
 
             //Domain
             services.AddScoped<CarsDomainService>();
+            services.AddScoped<RentCarDomainService>();
 
             return services;
         }

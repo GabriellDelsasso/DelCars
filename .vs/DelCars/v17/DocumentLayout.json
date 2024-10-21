@@ -3,48 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\gabri\\source\\repos\\DelCars\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FB247D2-BB2D-4B63-A51E-C0D022749263}|DelCars.Application\\DelCars.Application.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.application\\services\\carsapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB247D2-BB2D-4B63-A51E-C0D022749263}|DelCars.Application\\DelCars.Application.csproj|solutionrelative:delcars.application\\services\\carsapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA92F8DB-F65B-4320-9284-B5D6F5E9917A}|DelCars.Domain\\DelCars.Domain.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.domain\\services\\carsdomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA92F8DB-F65B-4320-9284-B5D6F5E9917A}|DelCars.Domain\\DelCars.Domain.csproj|solutionrelative:delcars.domain\\services\\carsdomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36D989C5-6685-401E-A3D8-1FE0C42B49A8}|Delcars.Infrastructure\\Delcars.Infra.Data.Postgre.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.infrastructure\\repositories\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36D989C5-6685-401E-A3D8-1FE0C42B49A8}|Delcars.Infrastructure\\Delcars.Infra.Data.Postgre.csproj|solutionrelative:delcars.infrastructure\\repositories\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FB247D2-BB2D-4B63-A51E-C0D022749263}|DelCars.Application\\DelCars.Application.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.application\\interfaces\\icarsapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FB247D2-BB2D-4B63-A51E-C0D022749263}|DelCars.Application\\DelCars.Application.csproj|solutionrelative:delcars.application\\interfaces\\icarsapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\controllers\\rentcarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\controllers\\rentcarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB247D2-BB2D-4B63-A51E-C0D022749263}|DelCars.Application\\DelCars.Application.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.application\\services\\rentcarapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB247D2-BB2D-4B63-A51E-C0D022749263}|DelCars.Application\\DelCars.Application.csproj|solutionrelative:delcars.application\\services\\rentcarapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA92F8DB-F65B-4320-9284-B5D6F5E9917A}|DelCars.Domain\\DelCars.Domain.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.domain\\services\\rentcardomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA92F8DB-F65B-4320-9284-B5D6F5E9917A}|DelCars.Domain\\DelCars.Domain.csproj|solutionrelative:delcars.domain\\services\\rentcardomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB247D2-BB2D-4B63-A51E-C0D022749263}|DelCars.Application\\DelCars.Application.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.application\\interfaces\\irentcarapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB247D2-BB2D-4B63-A51E-C0D022749263}|DelCars.Application\\DelCars.Application.csproj|solutionrelative:delcars.application\\interfaces\\irentcarapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1F7CD9A3-D085-4734-BD81-2630FB14F933}|DelCars\\DelCars.csproj|solutionrelative:delcars\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{068767BA-1D91-4213-BFE2-CB7EF594837E}|DelCars.Domain.Models\\DelCars.Domain.Models.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.domain.models\\car\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{068767BA-1D91-4213-BFE2-CB7EF594837E}|DelCars.Domain.Models\\DelCars.Domain.Models.csproj|solutionrelative:delcars.domain.models\\car\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36D989C5-6685-401E-A3D8-1FE0C42B49A8}|Delcars.Infrastructure\\Delcars.Infra.Data.Postgre.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.infrastructure\\context\\carcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36D989C5-6685-401E-A3D8-1FE0C42B49A8}|Delcars.Infrastructure\\Delcars.Infra.Data.Postgre.csproj|solutionrelative:delcars.infrastructure\\context\\carcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C87E35D-3BE0-4CF2-A969-892163AB6F97}|DelCars.Infra.CrossCutting.IoC\\DelCars.Infra.CrossCutting.IoC.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.infra.crosscutting.ioc\\postgreinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C87E35D-3BE0-4CF2-A969-892163AB6F97}|DelCars.Infra.CrossCutting.IoC\\DelCars.Infra.CrossCutting.IoC.csproj|solutionrelative:delcars.infra.crosscutting.ioc\\postgreinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C87E35D-3BE0-4CF2-A969-892163AB6F97}|DelCars.Infra.CrossCutting.IoC\\DelCars.Infra.CrossCutting.IoC.csproj|c:\\users\\gabri\\source\\repos\\delcars\\delcars.infra.crosscutting.ioc\\domaininjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C87E35D-3BE0-4CF2-A969-892163AB6F97}|DelCars.Infra.CrossCutting.IoC\\DelCars.Infra.CrossCutting.IoC.csproj|solutionrelative:delcars.infra.crosscutting.ioc\\domaininjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,80 +42,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RentCarDomainService.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Domain\\Services\\RentCarDomainService.cs",
+              "RelativeDocumentMoniker": "DelCars.Domain\\Services\\RentCarDomainService.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Domain\\Services\\RentCarDomainService.cs",
+              "RelativeToolTip": "DelCars.Domain\\Services\\RentCarDomainService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T01:11:02.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RentCarApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Application\\Services\\RentCarApplicationService.cs",
+              "RelativeDocumentMoniker": "DelCars.Application\\Services\\RentCarApplicationService.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Application\\Services\\RentCarApplicationService.cs",
+              "RelativeToolTip": "DelCars.Application\\Services\\RentCarApplicationService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T01:07:58.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ICarsApplicationService.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Application\\Interfaces\\ICarsApplicationService.cs",
-              "RelativeDocumentMoniker": "DelCars.Application\\Interfaces\\ICarsApplicationService.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Application\\Interfaces\\ICarsApplicationService.cs",
-              "RelativeToolTip": "DelCars.Application\\Interfaces\\ICarsApplicationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Title": "IRentCarApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Application\\Interfaces\\IRentCarApplicationService.cs",
+              "RelativeDocumentMoniker": "DelCars.Application\\Interfaces\\IRentCarApplicationService.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Application\\Interfaces\\IRentCarApplicationService.cs",
+              "RelativeToolTip": "DelCars.Application\\Interfaces\\IRentCarApplicationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T23:13:52.532Z",
+              "WhenOpened": "2024-10-21T01:08:59.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Domain.Models\\Car\\Car.cs",
-              "RelativeDocumentMoniker": "DelCars.Domain.Models\\Car\\Car.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Domain.Models\\Car\\Car.cs",
-              "RelativeToolTip": "DelCars.Domain.Models\\Car\\Car.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "DocumentIndex": 1,
+              "Title": "RentCarController.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Controllers\\RentCarController.cs",
+              "RelativeDocumentMoniker": "DelCars\\Controllers\\RentCarController.cs",
+              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Controllers\\RentCarController.cs",
+              "RelativeToolTip": "DelCars\\Controllers\\RentCarController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T22:05:21.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\appsettings.json",
-              "RelativeDocumentMoniker": "DelCars\\appsettings.json",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\appsettings.json",
-              "RelativeToolTip": "DelCars\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-20T21:59:11.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CarContext.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\Delcars.Infrastructure\\Context\\CarContext.cs",
-              "RelativeDocumentMoniker": "Delcars.Infrastructure\\Context\\CarContext.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\Delcars.Infrastructure\\Context\\CarContext.cs",
-              "RelativeToolTip": "Delcars.Infrastructure\\Context\\CarContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T21:47:20.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PostgreInjection.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Infra.CrossCutting.IoC\\PostgreInjection.cs",
-              "RelativeDocumentMoniker": "DelCars.Infra.CrossCutting.IoC\\PostgreInjection.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Infra.CrossCutting.IoC\\PostgreInjection.cs",
-              "RelativeToolTip": "DelCars.Infra.CrossCutting.IoC\\PostgreInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T20:44:38.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DomainInjection.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Infra.CrossCutting.IoC\\DomainInjection.cs",
-              "RelativeDocumentMoniker": "DelCars.Infra.CrossCutting.IoC\\DomainInjection.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Infra.CrossCutting.IoC\\DomainInjection.cs",
-              "RelativeToolTip": "DelCars.Infra.CrossCutting.IoC\\DomainInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T19:54:48.811Z",
+              "WhenOpened": "2024-10-21T00:50:06.06Z",
               "EditorCaption": ""
             },
             {
@@ -146,61 +100,22 @@
               "RelativeDocumentMoniker": "DelCars\\Program.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Program.cs",
               "RelativeToolTip": "DelCars\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T19:23:15.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CarRepository.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\Delcars.Infrastructure\\Repositories\\CarRepository.cs",
               "RelativeDocumentMoniker": "Delcars.Infrastructure\\Repositories\\CarRepository.cs",
               "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\Delcars.Infrastructure\\Repositories\\CarRepository.cs",
               "RelativeToolTip": "Delcars.Infrastructure\\Repositories\\CarRepository.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwEEAAAAmAAAA",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAcwJsAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T16:57:07.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CarsDomainService.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Domain\\Services\\CarsDomainService.cs",
-              "RelativeDocumentMoniker": "DelCars.Domain\\Services\\CarsDomainService.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Domain\\Services\\CarsDomainService.cs",
-              "RelativeToolTip": "DelCars.Domain\\Services\\CarsDomainService.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowCYAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T14:43:42.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarsApplicationService.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Application\\Services\\CarsApplicationService.cs",
-              "RelativeDocumentMoniker": "DelCars.Application\\Services\\CarsApplicationService.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars.Application\\Services\\CarsApplicationService.cs",
-              "RelativeToolTip": "DelCars.Application\\Services\\CarsApplicationService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAewDMAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T14:07:24.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CarsController.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Controllers\\CarsController.cs",
-              "RelativeDocumentMoniker": "DelCars\\Controllers\\CarsController.cs",
-              "ToolTip": "C:\\Users\\gabri\\source\\repos\\DelCars\\DelCars\\Controllers\\CarsController.cs",
-              "RelativeToolTip": "DelCars\\Controllers\\CarsController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCoAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T20:56:15.993Z",
               "EditorCaption": ""
             }
           ]
