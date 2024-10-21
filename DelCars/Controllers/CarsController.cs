@@ -1,7 +1,5 @@
 ﻿using DelCars.Application.Interfaces;
 using DelCars.Application.ViewModels;
-using DelCars.Domain.Models.Car;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DelCars.Controllers
@@ -37,6 +35,12 @@ namespace DelCars.Controllers
         public async Task<ActionResult> GetAllCars()
         {
             return Ok(await _carsApplicationService.GetAllCars());
+        }
+
+        [HttpGet("GetRentedCars")]
+        public async Task<ActionResult> GetRentedCars()
+        {
+            return Ok(await _carsApplicationService.GetRentedCars());
         }
 
         /// <summary>

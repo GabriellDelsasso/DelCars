@@ -7,6 +7,7 @@ namespace DelCars.Application.Interfaces
     {
         Task<(bool, string)> RegisterCar(CarViewModel carViewModel);
         Task<IList<Car>> GetAllCars();
+        Task<IList<Car>> GetRentedCars();
         Task<bool> UpdateCarInfo(Guid id, CarViewModel carViewModel);
         Task<bool> DeleteCar(Guid id);
     }

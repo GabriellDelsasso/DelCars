@@ -49,6 +49,13 @@ namespace DelCars.Application.Services
             return allCars;
         }
 
+        public async Task<IList<Car>> GetRentedCars()
+        {
+            var carsRented = await _carsDomainService.GetRentedCar();
+
+            return carsRented;
+        }
+
         public async Task<bool> UpdateCarInfo(Guid id, CarViewModel carViewModel)
         {
             if (carViewModel != null)
