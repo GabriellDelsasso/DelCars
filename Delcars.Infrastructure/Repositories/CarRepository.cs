@@ -108,11 +108,16 @@ namespace Delcars.Infra.Data.Postgre.Repositories
                 if (carUpdate == null)
                     return false;
 
-                carUpdate.Mark = string.IsNullOrEmpty(car.Mark) ? carUpdate.Mark : car.Mark;
-                carUpdate.Model = string.IsNullOrEmpty(car.Model) ? carUpdate.Model : car.Model;
-                carUpdate.Year = string.IsNullOrEmpty(car.Year) ? carUpdate.Year : car.Year;
-                carUpdate.Color = string.IsNullOrEmpty(car.Color) ? carUpdate.Color : car.Color;
-                carUpdate.Plate = string.IsNullOrEmpty(car.Plate) ? carUpdate.Plate : car.Plate;
+                foreach(var propertyInfo in typeof(Car).GetProperties())
+                {
+                    var newValue = propertyInfo.GetValue(car);
+                    var oldValue = propertyInfo.GetValue(carUpdate);
+
+                    if(!Equals(newValue, oldValue))
+                    {
+                        propertyInfo.SetValue(carUpdate, newValue);
+                    }
+                }
 
                 context.SaveChanges();
 
@@ -133,27 +138,6 @@ namespace Delcars.Infra.Data.Postgre.Repositories
                     return false;
 
                 context.car.Remove(carDelete);
-
-                context.SaveChanges();
-
-                return true;
-            }
-        }
-
-        public bool RentCar(Car car)
-        {
-            var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
-            optionsBuilder.UseNpgsql(_connection.ConnectionString);
-
-            using (var context = new CarContext(optionsBuilder.Options))
-            {
-                var carUpdate = context.car.Find(car.Id);
-
-                if (carUpdate == null)
-                    return false;
-
-                carUpdate.Rented = car.Rented;
-                carUpdate.ReturnDate = car.ReturnDate.ToUniversalTime();
 
                 context.SaveChanges();
 

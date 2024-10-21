@@ -19,7 +19,6 @@ namespace DelCars.Controllers
         [HttpPost("Rent")]
         public async Task<ActionResult> Rent(Guid id, DateTime returnDate)
         {
-
             var car = await _rentCarApplicationService.RentCar(id, returnDate);
 
             return Ok(car);
@@ -29,9 +28,11 @@ namespace DelCars.Controllers
         /// Endpoint responsible for returning the car
         /// </summary>
         [HttpPost("Return")]
-        public async void Return()
+        public async Task<ActionResult> Return(Guid id)
         {
+            var returnCar = await _rentCarApplicationService.ReturnCar(id);
 
+            return Ok(returnCar);
         }
     }
 }

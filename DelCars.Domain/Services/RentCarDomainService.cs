@@ -22,9 +22,22 @@ namespace DelCars.Domain.Services
             return _carRepository.GetOne(id);
         }
 
-        public async Task<bool> RentCar(Car car)
+        public async Task<bool> RentCar(Car car, DateTime returnDate)
         {
-            var result = _carRepository.RentCar(car);
+            car.Rented = true;
+            car.ReturnDate = returnDate;
+
+            var result = _carRepository.Update(car);
+
+            return result;
+        }
+
+        public async Task<bool> ReturnCar(Car car)
+        {
+            car.Rented = false;
+            car.ReturnDate = Convert.ToDateTime("01/01/0001");
+
+            var result = _carRepository.Update(car);
 
             return result;
         }
