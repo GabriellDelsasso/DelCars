@@ -22,13 +22,18 @@ namespace DelCars.Application.Services
             var car = await _rentCarDomainService.GetOne(id);
 
             if (!car.Rented && car != null)
-            { 
-                var rentCar = await _rentCarDomainService.RentCar(car, returnDate);
+            {
+                if (returnDate > DateTime.Now)
+                {
+                    var rentCar = await _rentCarDomainService.RentCar(car, returnDate);
 
-                if(rentCar)
-                    return car;
+                    if (rentCar)
+                        return car;
 
-                throw new Exception("Falha ao alugar carro, tente novamente mais tarde!");
+                    throw new Exception("Falha ao alugar carro, tente novamente mais tarde!");
+                }
+
+                throw new Exception("Falha ao alugar carro, data inválida!");
             }
 
             throw new Exception("O carro não está disponível!");
