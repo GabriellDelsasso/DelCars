@@ -25,7 +25,7 @@ namespace DelCars.Domain.Services
         public async Task<bool> RentCar(Car car, DateTime returnDate)
         {
             car.Rented = true;
-            car.ReturnDate = returnDate;
+            car.ReturnDate = returnDate.ToUniversalTime();
 
             var result = _carRepository.Update(car);
 
