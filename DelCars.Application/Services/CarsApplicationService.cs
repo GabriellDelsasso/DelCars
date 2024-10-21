@@ -48,5 +48,20 @@ namespace DelCars.Application.Services
 
             return allCars;
         }
+
+        public async Task<bool> UpdateCarInfo(Guid id, CarViewModel carViewModel)
+        {
+            if (carViewModel != null)
+            {
+                var car = _mapper.Map<Car>(carViewModel);
+                car.Id = id;
+
+                var updateCar = await _carsDomainService.UpdateCarInfo(car);
+
+                return updateCar;
+            }
+
+            return false;
+        }
     }
 }

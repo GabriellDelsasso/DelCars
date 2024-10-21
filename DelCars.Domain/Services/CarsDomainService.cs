@@ -35,5 +35,12 @@ namespace DelCars.Domain.Services
 
             return allCars;
         }
+
+        public async Task<bool> UpdateCarInfo(Car carToUpdate)
+        {
+            var updateCar = _carRepository.Update(carToUpdate);
+
+            return updateCar;
+        }
     }
 }

@@ -43,9 +43,14 @@ namespace DelCars.Controllers
         /// Endpoint responsible for editing car information
         /// </summary>
         [HttpPost("EditCar")]
-        public async void EditCar()
+        public async Task<ActionResult> EditCar(Guid id, [FromBody] CarViewModel carViewModel)
         {
+            var result = await _carsApplicationService.UpdateCarInfo(id, carViewModel);
 
+            if (result)
+                return Ok();
+
+            return BadRequest("Falha ao Editar informações do carro!");
         }
 
         /// <summary>

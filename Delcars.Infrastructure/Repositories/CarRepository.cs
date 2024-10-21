@@ -62,5 +62,29 @@ namespace Delcars.Infra.Data.Postgre.Repositories
                 return context.car.ToList();
             }
         }
+
+        public bool Update(Car car)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<CarContext>();
+            optionsBuilder.UseNpgsql(_connection.ConnectionString);
+
+            using (var context = new CarContext(optionsBuilder.Options))
+            {
+                var carUpdate = context.car.Find(car.Id);
+
+                if (carUpdate == null)
+                    return false;
+
+                carUpdate.Mark = string.IsNullOrEmpty(car.Mark) ? carUpdate.Mark : car.Mark;
+                carUpdate.Model = string.IsNullOrEmpty(car.Model) ? carUpdate.Model : car.Model;
+                carUpdate.Year = string.IsNullOrEmpty(car.Year) ? carUpdate.Year : car.Year;
+                carUpdate.Color = string.IsNullOrEmpty(car.Color) ? carUpdate.Color : car.Color;
+                carUpdate.Plate = string.IsNullOrEmpty(car.Plate) ? carUpdate.Plate : car.Plate;
+
+                context.SaveChanges();
+
+                return true;
+            }
+        }
     }
 }
