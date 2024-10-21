@@ -44,11 +44,11 @@ namespace DelCars.Application.Services
 
                 var returnCar = await _rentCarDomainService.ReturnCar(car);
 
-                if (returnCar && oldDate <= DateTime.Now)
+                if (returnCar && oldDate >= DateTime.Now)
                 {
                     return (returnCar, "Carro devolvido com sucesso!");
                 }
-                else if(returnCar && oldDate > DateTime.Now)
+                else if(returnCar && oldDate < DateTime.Now)
                 {
                     return (returnCar, "Carro devolvido com atraso, será cobrada uma taxa!");
                 }
