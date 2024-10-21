@@ -11,6 +11,6 @@ namespace DelCars.Application.Interfaces
     public interface IRentCarApplicationService
     {
         Task<Car> RentCar(Guid id, DateTime returnDate);
-        Task<(Car, string)> ReturnCar(Guid id);
+        Task<(bool, string)> ReturnCar(Guid id);
     }
 }
