@@ -27,7 +27,7 @@ namespace DelCars.Application.Services
                     var validatorResult = validator.Validate(carViewModel);
 
                     if (!validatorResult.IsValid)
-                        return (false, $"{validatorResult.Errors.DefaultIfEmpty()}");
+                        return (false, $"{validatorResult.Errors.FirstOrDefault()}");
 
                     var carExists = await _carsDomainService.VerifyCarExists(carViewModel.Plate);
 
